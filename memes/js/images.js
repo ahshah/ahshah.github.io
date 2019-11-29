@@ -34,7 +34,7 @@ function renderImgs(imgs) {
         `
     })
         .join(' ')
-        
+
     document.querySelector('.gallery').innerHTML = strHtml;
 }
 
