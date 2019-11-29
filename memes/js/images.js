@@ -15,7 +15,7 @@ function init() {
 
 function createImgs() {
     var imgs = [];
-    imgs.push(createImage('./img/gallery/One-Does-Not-Simply.jpg', ['fun']))
+    imgs.push(createImage('./img/gallery/andres.png', ['fun']))
     return imgs;
 }
 
@@ -30,7 +30,9 @@ function createImage(url, keywords) {
 function renderImgs(imgs) {
     var strHtml = imgs.map(function (img, idx) {
         return `
+        <div width="400" height="400">
         <img id='${img.id}' src='${img.url}' onclick="initMemeEditor(${img.id},this)" alt='meme picture'/>
+        </div>
         `
     })
         .join(' ')
