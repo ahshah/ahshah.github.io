@@ -15,9 +15,7 @@ function init() {
 
 function createImgs() {
     var imgs = [];
-
-   imgs.push(createImage('./img/gallery/One-Does-Not-Simply.jpg', ['fun']))
-
+    imgs.push(createImage('./img/gallery/One-Does-Not-Simply.jpg', ['fun']))
     return imgs;
 }
 
@@ -40,4 +38,3 @@ function renderImgs(imgs) {
     document.querySelector('.gallery').innerHTML = strHtml;
 }
 
-// <div id='${img.id}' class="photo" onclick="initMemeEditor(${img.id},this)" style="background-image: url('${img.url}')">
